@@ -1,6 +1,7 @@
 from selenium import webdriver
 import sys
-navegador = webdriver.Firefox(executable_path='/home/robertocpaes/Área de trabalho/python auto/geckodriver')
+import os
+navegador = webdriver.Firefox(executable_path=os.path.join(sys.path[0], "geckodriver"))
 
 print('Number of arguments:', len(sys.argv), 'arguments.')
 tipo = sys.argv[1]
