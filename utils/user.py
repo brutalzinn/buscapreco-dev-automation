@@ -1,8 +1,10 @@
 import random
-
+from utils.loja_generator import LEFT, RIGHT
 def generate_name():
-    name = [random.randint(0, 9) for x in range(9)]
-    return name
+    NameLeft = LEFT[random.randint(0, len(LEFT) -1)]
+    NameRight = RIGHT[random.randint(0, len(RIGHT) -1)]
+
+    return NameLeft + " " + NameRight
 
 def generate_cpf():
     cpf = [random.randint(0, 9) for x in range(9)]
