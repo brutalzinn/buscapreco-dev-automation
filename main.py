@@ -2,7 +2,9 @@ import importlib
 import os
 import sys
 from selenium import webdriver
-navegador = webdriver.Firefox(executable_path=os.path.join(sys.path[0], "geckodriver"))
+firefox_profile = webdriver.FirefoxProfile()
+firefox_profile.set_preference("browser.privatebrowsing.autostart", True)
+navegador = webdriver.Firefox(firefox_profile=firefox_profile,executable_path=os.path.join(sys.path[0], "geckodriver"))
 
 #tipo = sys.argv[1]
 print("Digite 1 - Para efetuar login no painel")

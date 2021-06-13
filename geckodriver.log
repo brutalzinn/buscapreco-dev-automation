@@ -1406,3 +1406,180 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1623554333305	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
 console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623554375987	Marionette	INFO	Stopped listening on port 45617
+1623554375992	Marionette	INFO	Stopped listening on port 40471
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623554376005	Marionette	INFO	Stopped listening on port 41965
+1623554376075	Marionette	INFO	Stopped listening on port 32781
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623602299590	geckodriver	INFO	Listening on 127.0.0.1:53699
+1623602300583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejMv7IY"
+1623602300898	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejMv7IY/search.json.mozlz4", (void 0)))
+1623602301827	Marionette	INFO	Listening on port 40213
+1623602301909	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623602677033	geckodriver	INFO	Listening on 127.0.0.1:44535
+1623602677036	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1EGEov"
+1623602677330	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1EGEov/search.json.mozlz4", (void 0)))
+1623602678456	Marionette	INFO	Listening on port 40151
+1623602678578	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623602687442	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: uncaught exception: undefined
+1623602823550	Marionette	INFO	Stopped listening on port 40151
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623602826210	Marionette	INFO	Stopped listening on port 40213
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623602829621	geckodriver	INFO	Listening on 127.0.0.1:46745
+1623602829625	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZSEeMb"
+1623602829929	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZSEeMb/search.json.mozlz4", (void 0)))
+1623602831067	Marionette	INFO	Listening on port 43647
+1623602831137	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://painel.buscapreco.local"
+1623603017963	geckodriver	INFO	Listening on 127.0.0.1:49693
+1623603017966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaJ03B7"
+1623603018269	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaJ03B7/search.json.mozlz4", (void 0)))
+1623603019325	Marionette	INFO	Listening on port 46205
+1623603019411	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623603102677	Marionette	INFO	Stopped listening on port 46205
+1623603102698	Marionette	INFO	Stopped listening on port 43647
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623603149573	geckodriver	INFO	Listening on 127.0.0.1:51105
+1623603149576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehzO4zr"
+1623603149881	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehzO4zr/search.json.mozlz4", (void 0)))
+1623603150828	Marionette	INFO	Listening on port 41499
+1623603150920	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623603162142	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+JavaScript error: https://static.criteo.net/js/ld/publishertag.prebid.js, line 2: TypeError: r.location is null
+Marionette threw an error: TypeError: browsingContextFn().currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:327:29
+
+1623603254157	geckodriver	INFO	Listening on 127.0.0.1:47203
+1623603254161	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePRfN0z"
+1623603254460	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePRfN0z/search.json.mozlz4", (void 0)))
+1623603255615	Marionette	INFO	Listening on port 34405
+1623603255674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+Unflushed glGetGraphicsResetStatus: 0x92bb
+Unflushed glGetGraphicsResetStatus: 0x92bb
+1623604032581	geckodriver	INFO	Listening on 127.0.0.1:48455
+1623604032584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileA50wYU"
+1623604032881	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileA50wYU/search.json.mozlz4", (void 0)))
+1623604033998	Marionette	INFO	Listening on port 39927
+1623604034120	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+Unflushed glGetGraphicsResetStatus: 0x92bb
+1623604977387	geckodriver	INFO	Listening on 127.0.0.1:52827
+1623604977390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaUVcV0"
+1623604977703	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaUVcV0/search.json.mozlz4", (void 0)))
+1623604978826	Marionette	INFO	Listening on port 37537
+1623604978930	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623604988263	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1623604988598	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+1623605017113	geckodriver	INFO	Listening on 127.0.0.1:43429
+1623605017116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled6irPC"
+1623605017574	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiled6irPC/search.json.mozlz4", (void 0)))
+1623605018893	Marionette	INFO	Listening on port 43767
+1623605018930	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_271.js, line 176: TypeError: this.j.contentWindow is undefined
+1623605056408	geckodriver	INFO	Listening on 127.0.0.1:38629
+1623605056412	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6Z0zAh"
+1623605056717	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6Z0zAh/search.json.mozlz4", (void 0)))
+1623605057668	Marionette	INFO	Listening on port 36873
+1623605057726	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623605066513	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+JavaScript error: https://vidstat.taboola.com/vpaid/units/27_2_17/creatives/creative_js.js, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://vidstat.taboola.com/vpaid/units/27_2_17/creatives/creative_js.js, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://static.criteo.net/js/ld/publishertag.prebid.js, line 2: TypeError: r.location is null
+JavaScript error: https://projectagora.net/libs/prebid.js line 9 > eval, line 1: TypeError: r.location is null
+1623605090261	Marionette	INFO	Stopped listening on port 41499
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623605090351	Marionette	INFO	Stopped listening on port 39927
+1623605090354	Marionette	INFO	Stopped listening on port 34405
+1623605090356	Marionette	INFO	Stopped listening on port 43767
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623605090411	Marionette	INFO	Stopped listening on port 37537
+1623605090462	Marionette	INFO	Stopped listening on port 36873
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623605091811	geckodriver	INFO	Listening on 127.0.0.1:40147
+1623605091814	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileo5Jc8J"
+1623605092113	Marionette	INFO	Marionette enabled
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileo5Jc8J/search.json.mozlz4", (void 0)))
+1623605093282	Marionette	INFO	Listening on port 37949
+1623605093326	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623605102228	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1623605102416	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+JavaScript error: https://cdn.adtrue.com/rtb/passback.js, line 9: SecurityError: Permission denied to access property "toppUrl" on cross-origin object
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1623605336751	geckodriver	INFO	Listening on 127.0.0.1:41977
+1623605336755	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWxWoyS"
+1623605337160	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWxWoyS/search.json.mozlz4", (void 0)))
+1623605337995	Marionette	INFO	Listening on port 37467
+1623605338077	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://securepubads.g.doubleclick.net/tag/js/gpt.js, line 160: TypeError: cmds is undefined
