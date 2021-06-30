@@ -17,19 +17,30 @@ import requests
 import re
 from bson import ObjectId
 from pprint import pprint
+from decimal import Decimal
 def Start(token,navegador):
   site = 'https://www.terabyteshop.com.br/'
   # termo_pesquisa = 'Memoria RAM 8gb'
   termo_pesquisa = input('Termo de pesquisa:')
   estabelecimento = input('Estabelecimento:')
-  n_produt = int(input('Quantidade de produtos:'))
+  if estabelecimento == '':
+    estabelecimento =  '60d1250161605f061004cceb'
+  if termo_pesquisa == '':
+    termo_pesquisa =  'placa de video'
+  print('estabelecimento selecionado:',estabelecimento)
+  n_produt = input('Quantidade de produtos:')
+  if n_produt != '':
+    n_produt = int(n_produt)
+  else:
+    n_produt = 1
+
   navegador.get(site)
   campo_busca = WebDriverWait(navegador, 10).until(ec.visibility_of_element_located((By.ID, 'isearch')))
   #navegador.find_element_by_id('misearch')
   campo_busca.send_keys(termo_pesquisa)
   campo_busca.send_keys(Keys.ENTER)
   time.sleep(3)
-  p = 0
+  p = 1
   print(f"Lendo página {p}...")
   html = navegador.find_element_by_id("prodarea")
 
@@ -48,9 +59,10 @@ def Start(token,navegador):
         alternativePreco = navegador.find_element_by_class_name('p3')
         preco = alternativePreco.find_element_by_tag_name('span')
         pass
-      if p == 0:
+      if p == 1:
         try:
-          button = WebDriverWait(navegador, 10).until(ec.visibility_of_element_located((By.ID,'btnCloseCookie'))).click()
+        #  navegador.implicitly_wait(10)
+         WebDriverWait(navegador, 10).until(ec.visibility_of_element_located((By.ID,'btnCloseCookie'))).click()
         except TimeoutException:
           pass
       time.sleep(1)
@@ -62,9 +74,10 @@ def Start(token,navegador):
       esptecnica = tecnica.find_elements_by_tag_name('p')
       obj = {}
       obj['nome'] = title.text
-      a_string = preco.text
-      a_string = a_string.replace(',',"")
-      obj['preco'] = int(re.search(r'\d+', a_string).group()) / 100
+      obj['preco']  = float(preco.text.split("R$")[1].replace('\n', '').replace(',','.'))
+      print('preco',obj['preco'])
+     # a_string = a_string.replace(',',"")
+    #  obj['preco'] = int(re.search(r'\d+', a_string).group()) / 100
       for f in esptecnica:
         split = f.text.split(':')
         nome = split[0].replace('\r', '').replace('\n', '').lower()
@@ -76,20 +89,24 @@ def Start(token,navegador):
         'modelo':obj['modelo'],
         'preco':obj['preco'],
         'status':True,
-        'estabelecimento':ObjectId(estabelecimento),
+        'estabelecimento':estabelecimento,
         'descricao':tecnica.get_attribute("innerHTML"),
-        'categorias':[ObjectId('60c8d0768089d00569cde3d8')]
+        'categorias':['60c8d0768089d00569cde3d8']
       }
       headers = {
-        "x-access-token": token
-      }
-      requests.post('http://127.0.0.1:8000/v1/produto', data=finalObj, headers=headers)
+        'x-access-token': token,
+       }
+      requests.post('http://127.0.0.1:8000/v1/produto', json=finalObj, headers=headers)
       if p == n_produt:
         print("Extração concluída.")
         break
       p += 1
     except Exception:
-     continue
+      if p == n_produt:
+        print("Extração concluída.")
+      raise
+    pass
+
     #   x = {"name":"teste"}
     #  // print(x['name'])
         # elif f.find_element_by_tag_name('p') is not None:
