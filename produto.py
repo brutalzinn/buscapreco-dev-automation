@@ -73,13 +73,17 @@ def Start(token,navegador):
       tecnica = navegador.find_element_by_class_name('tecnicas')
       esptecnica = tecnica.find_elements_by_tag_name('p')
       obj = {}
+      obj['marca'] = ''
+      obj['marca'] = ''
+      obj['modelo'] = ''
       obj['nome'] = title.text
-      obj['preco']  = float(preco.text.split("R$")[1].replace('\n', '').replace(',','.'))
-      print('preco',obj['preco'])
+      precoPuro = preco.text.strip('R$').replace(' ', '')
+      obj['preco'] = int(precoPuro.replace(',','').replace('.','')) / 100
      # a_string = a_string.replace(',',"")
     #  obj['preco'] = int(re.search(r'\d+', a_string).group()) / 100
       for f in esptecnica:
         split = f.text.split(':')
+      if len(split) == 2:
         nome = split[0].replace('\r', '').replace('\n', '').lower()
         value = split[1].replace('\r', '').replace('\n', '').lower()
         obj[nome] = value

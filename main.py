@@ -34,8 +34,6 @@ elif entrada == '3':
 elif entrada == '4':
   moduleAuto = importlib.import_module("request")
   token = getattr(moduleAuto, "loginAuth")
-  print('received token',token())
-  moduleAuto = importlib.import_module("produto")
-  ds = getattr(moduleAuto, "Start")
+  produtoAuto = importlib.import_module("produto")
+  ds = getattr(produtoAuto, "Start")
   ds(token(),navegador)
-navegador.close()
