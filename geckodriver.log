@@ -2813,3 +2813,36 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1625084499171	Marionette	WARN	TLS certificate errors will be ignored for this session
 1625084514966	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 1625084520760	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1625084607696	geckodriver	INFO	Listening on 127.0.0.1:43663
+1625084607701	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePoB7ck"
+1625084608003	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePoB7ck/search.json.mozlz4", (void 0)))
+1625084609116	Marionette	INFO	Listening on port 41045
+1625084609214	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625084767085	Marionette	INFO	Stopped listening on port 43545
+1625084767096	Marionette	INFO	Stopped listening on port 35887
+1625084767103	Marionette	INFO	Stopped listening on port 35151
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625084767108	Marionette	INFO	Stopped listening on port 41045
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625084767114	Marionette	INFO	Stopped listening on port 43761
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625084919594	geckodriver	INFO	Listening on 127.0.0.1:34387
+1625084919598	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDNdbdt"
+1625084920011	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDNdbdt/search.json.mozlz4", (void 0)))
+1625084921003	Marionette	INFO	Listening on port 45529
+1625084921146	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625084970560	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1625084973318	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.

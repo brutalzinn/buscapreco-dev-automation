@@ -23,6 +23,9 @@ def Start(token,navegador):
   # termo_pesquisa = 'Memoria RAM 8gb'
   termo_pesquisa = input('Termo de pesquisa:')
   estabelecimento = input('Estabelecimento:')
+  categoria = input('Categoria:')
+
+
   if estabelecimento == '':
     estabelecimento =  '60d1250161605f061004cceb'
   if termo_pesquisa == '':
@@ -95,7 +98,7 @@ def Start(token,navegador):
         'status':True,
         'estabelecimento':estabelecimento,
         'descricao':tecnica.get_attribute("innerHTML"),
-        'categorias':['60c8d0768089d00569cde3d8']
+        'categorias':[categoria]
       }
       headers = {
         'x-access-token': token,
