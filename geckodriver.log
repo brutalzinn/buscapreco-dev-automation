@@ -2846,3 +2846,19 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1625084921146	Marionette	WARN	TLS certificate errors will be ignored for this session
 1625084970560	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 1625084973318	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1625143018220	geckodriver	INFO	Listening on 127.0.0.1:38193
+1625143019225	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3sjBIk"
+1625143019557	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3sjBIk/search.json.mozlz4", (void 0)))
+1625143020641	Marionette	INFO	Listening on port 43665
+1625143020750	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1625143955723	geckodriver	INFO	Listening on 127.0.0.1:47789
+1625143955728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHzsvxO"
+1625143956192	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHzsvxO/search.json.mozlz4", (void 0)))
+1625143957667	Marionette	INFO	Listening on port 36707
+1625143957740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625144010901	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
